@@ -1,0 +1,40 @@
+genepop2table v1.1
+
+INTRODUCTION:
+
+This program converts a input file for the popular program genepop to a .len file to be used in the popabc program
+
+authors: Joao Lopes
+workplace: University of Reading
+date: 24th October 2009
+
+Arguments:
+1) input filename (*.txt)
+3) output filename (*.len)
+
+Input files:
+GenePop input file (.txt)
+Output files:
+Table file (.dat)
+
+Example:
+genepop2table.exe input/sample.txt output/tablefile
+
+
+USER-GUIDE:
+
+1.Compile the executable files
+First you need to compile the executable by running the Makefile in the base directory. Just type the following instruction in the command line:
+
+make
+
+The executables genepop2table.exe should have been created in the base directory.
+
+If you want to delete the files created by running the Makefile just type in the base directory:
+
+make clean
+
+2. Run the genepop2table.exe
+To convert the sample file provided type the following in the command line:
+
+./genepop2table.exe examples/toysample.txt examples/toytable
